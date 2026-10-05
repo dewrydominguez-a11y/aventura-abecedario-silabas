@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Aventura del Abecedario y las Sílabas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🌈 Aventura del Abecedario</h1>
+        <p>🔤 Aprende las letras y las sílabas jugando</p>
+        <h3>👨‍🏫 Teacher Dewry</h3>
+    </header>
+
+    <main>
+
+        <section id="inicio" class="pantalla">
+            <h2>🎮 ¡Bienvenidos!</h2>
+
+            <p>
+                Aprende el abecedario y las sílabas
+                mientras te diviertes.
+            </p>
+
+            <button onclick="mostrarAbecedario()">
+                🔤 ABECEDARIO
+            </button>
+
+            <button onclick="mostrarSilabas()">
+                🧩 SÍLABAS
+            </button>
+        </section>
+
+
+        <section id="abecedario" class="pantalla oculto">
+
+            <h2>🔤 El Abecedario</h2>
+
+            <div id="letra"></div>
+
+            <div id="palabra"></div>
+
+            <button onclick="letraAnterior()">
+                ⬅️ Anterior
+            </button>
+
+            <button onclick="escucharLetra()">
+                🔊 Escuchar
+            </button>
+
+            <button onclick="letraSiguiente()">
+                Siguiente ➡️
+            </button>
+
+            <br><br>
+
+            <button onclick="volverInicio()">
+                🏠 Inicio
+            </button>
+
+        </section>
+
+
+        <section id="silabas" class="pantalla oculto">
+
+            <h2>🧩 Juego de Sílabas</h2>
+
+            <div id="preguntaSilaba"></div>
+
+            <div id="opciones"></div>
+
+            <div id="resultado"></div>
+
+            <p>
+                ⭐ Puntos:
+                <span id="puntos">0</span>
+            </p>
+
+            <button onclick="nuevaPregunta()">
+                🎲 Nueva pregunta
+            </button>
+
+            <br><br>
+
+            <button onclick="volverInicio()">
+                🏠 Inicio
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>🌟 Aprende jugando con Teacher Dewry 🌟</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
